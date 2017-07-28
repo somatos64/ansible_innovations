@@ -1,7 +1,7 @@
 ---
 
 - name: AWS Infrastructure
-  hosts: localhost
+#  hosts: localhost
   tasks:
 
     - name: install the latest version of Apache
