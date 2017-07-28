@@ -1,6 +1,10 @@
 ---
 
-- name: install the latest version of Apache
-  yum:
-    name: wget
-    state: latest
+- name: AWS Infrastructure
+  hosts: localhost
+  tasks:
+
+    - name: install the latest version of Apache
+      yum:
+        name: wget
+        state: latest
