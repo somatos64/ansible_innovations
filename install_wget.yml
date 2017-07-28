@@ -3,8 +3,9 @@
 - name: AWS Infrastructure
   hosts: all
   tasks:
-
+  become: yes
+  become_user: root
     - name: install the latest version of Apache
       yum:
         name: wget
-        state: latest
+        state: present
