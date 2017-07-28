@@ -1,0 +1,6 @@
+---
+
+- name: install the latest version of Apache
+  yum:
+    name: wget
+    state: latest
