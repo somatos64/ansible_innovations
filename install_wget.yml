@@ -5,7 +5,6 @@
   become: yes
   become_user: root
   tasks:
-    - name: install the latest version of Apache
-      yum:
-        name: wget
-        state: present
+    - debug:
+        var: hostvars
+        verbosity: 4
