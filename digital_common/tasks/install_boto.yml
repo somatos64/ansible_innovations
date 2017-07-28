@@ -1,0 +1,10 @@
+---
+
+- name: Install dependencies
+  yum:
+    name: python-boto
+    state: present
+  when: ansible_os_family == 'RedHat'
+
+
+#TODO add support for yum distros
