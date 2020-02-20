@@ -1,9 +1,0 @@
----
-
-- name: AWS Infrastructure
-  hosts: all
-  become: yes
-  become_user: root
-  tasks:
-    - debug:
-        var: hostvars
